@@ -12,11 +12,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     let picker = UIImagePickerController()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             picker.sourceType = .camera
